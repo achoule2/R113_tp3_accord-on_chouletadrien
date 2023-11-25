@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordéon avec des booléens</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon">
+      <section x-data="{
+        isOpen:false,
+      }">
+        <button @click="isOpen=!isOpen">bouton 1</button>
+        <p x-show="isOpen">Patrick ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum itaque hic saepe facere error est. Illum aliquam perferendis ab eligendi nam voluptate? Praesentium exercitationem sed at iusto, quos itaque.</p>
+      </section>
+      <section x-data="{
+        isOpen:false,
+      }">
+        <button @click="isOpen=!isOpen">bouton 2</button>
+        <p x-show="isOpen">Expedita Patrick maiores eaque, pariatur reprehenderit sit porro quae, nostrum nihil eligendi perspiciatis voluptate nesciunt? Quasi fugiat quia atque libero. Possimus vel doloremque quas provident nesciunt iste mollitia minus dolore dolor.</p>
+      </section>
+      <section x-data="{
+        isOpen:false,
+      }">
+        <button @click="isOpen=!isOpen">bouton 3</button>
+        <p x-show="isOpen">Perferendis incidunt vor Patrick rem iste natus aperiam laboriosam eum, quod sequi, nostrum quaerat ducimus quo rerum fuga vero unde. Placeat voluptate voluptas voluptatum minima facilis fugit ab officia inventore veniam omnis.</p>
+      </section>
+    </div>
+  </body>
+</html>
